@@ -1,1 +1,1 @@
-web: gunicorn catapi.wsgi --log-file -
+web: gunicorn CatAPI.wsgi --log-file -
