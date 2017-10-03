@@ -143,38 +143,3 @@ STATIC_URL = STATIC_HOST + '/static/'
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-
-STATICFILES_STORAGE = 'whitenoise.storage.ManifestStaticFilesStorage'
-
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'filters': {
-#         'require_debug_false': {
-#             '()': 'django.utils.log.RequireDebugFalse'
-#         }
-#     },
-#     'handlers': {
-#         'mail_admins': {
-#             'level': 'ERROR',
-#             'filters': ['require_debug_false'],
-#             'class': 'django.utils.log.AdminEmailHandler'
-#         },
-#         'logfile': {
-#             'class': 'logging.handlers.WatchedFileHandler',
-#             'filename': 'error.log'
-#         },
-#     },
-#     'loggers': {
-#         'django.request': {
-#             'handlers': ['mail_admins'],
-#             'level': 'ERROR',
-#             'propagate': True,
-#         },
-#         'django': {
-#             'handlers': ['logfile'],
-#             'level': 'ERROR',
-#             'propagate': False,
-#         },
-#     }
-# }
