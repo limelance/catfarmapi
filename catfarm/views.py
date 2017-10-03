@@ -1,6 +1,4 @@
-from django.contrib.auth.models import User
-from rest_framework import generics, viewsets
-from oauth2_provider.views.generic import ProtectedResourceView
+from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from oauth2_provider.contrib.rest_framework import TokenHasReadWriteScope
 from .models import Cat
