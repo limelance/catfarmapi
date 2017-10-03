@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'kr90asan!#+b5o*o3!$&2wpj+y%38(ee=--d0@l1^i!pc3^@jc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -117,6 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGIN_URL = '/api/v1.0/login/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
