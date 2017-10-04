@@ -122,7 +122,7 @@ LOGIN_URL = '/api/v1.0/login/'
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = 'ru-en'
 
 TIME_ZONE = 'UTC'
 
@@ -138,4 +138,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'CatAPI/static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
